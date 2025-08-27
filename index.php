@@ -30,8 +30,8 @@ while ($data = mysqli_fetch_array($query)) {
         <td>$data[alamat]</td>
         <td>$data[no_hp]</td>
         <td>$data[email]</td>
-    <tr>"
-};
+    <tr>";
+}
 ?>
 
 </table>
