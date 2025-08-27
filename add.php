@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="index.php">home</a>
+    <a href="barang.php">home</a>
     <br>
     <form  method="post">
         <table>
