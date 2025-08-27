@@ -1,6 +1,7 @@
 <?php
-include_once(config.php);
-$query = mysqli_query($mysqli, "select * from admin order by username esc");
+include_once("koneksi.php");
+
+$query = mysqli_query($konn, "select * from admin order by username asc");
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +12,7 @@ $query = mysqli_query($mysqli, "select * from admin order by username esc");
     <title>Document</title>
 </head>
 <body>
+    <a href="add.php">add data</a> <br>
 <table border="1">
 <tr>
     <th>Id</th>
