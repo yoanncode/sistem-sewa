@@ -22,7 +22,7 @@ $query = mysqli_query($konn, "select * from admin order by username asc");
     <th>Alamat</th>
     <th>No. HP</th>
     <th>Email</th>
-    <th>Aksi</th>
+    <th>Aksi</th>   
 </tr>
 <?php
 while ($data = mysqli_fetch_array($query)) {

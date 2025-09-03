@@ -21,6 +21,9 @@ $select = mysqli_query($konn, "select * from jenis_barang order by jenis_barang 
             echo "<tr>
             <td>$data[jenis_barang]</td>
             <td>$data[keterangan]</td>
+            <td><a href='edit_barang.php?id=$data[jenis_barangId]'>edit</a>
+            <a href='delete_barang.php?id=$data[jenis_barangId]'>delete</a>
+            </td>
             </tr>";
         }
         ?>

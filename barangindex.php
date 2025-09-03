@@ -19,6 +19,7 @@ $select = mysqli_query($konn, "select * from barang inner join jenis_barang on b
             <th>satuan</th>
             <th>harga</th> 
             <th>admin</th> 
+            <th>aksi</th> 
         </tr>
         <?php
         while ($data = mysqli_fetch_array($select)) {
