@@ -1,4 +1,5 @@
 <?php
+
 include_once("koneksi.php");
 
 $query = mysqli_query($konn, "select * from admin order by username asc");
@@ -21,6 +22,7 @@ $query = mysqli_query($konn, "select * from admin order by username asc");
     <th>Alamat</th>
     <th>No. HP</th>
     <th>Email</th>
+    <th>Aksi</th>
 </tr>
 <?php
 while ($data = mysqli_fetch_array($query)) {
@@ -32,6 +34,7 @@ while ($data = mysqli_fetch_array($query)) {
         <td>$data[alamat]</td>
         <td>$data[no_hp]</td>
         <td>$data[email]</td>
+        <td><a href='edit_admin.php?id=$data[adminId]'>edit</a></td>
     <tr>";
 }
 ?>
