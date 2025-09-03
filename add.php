@@ -52,6 +52,7 @@
     
     $result = mysqli_query($konn, "insert into admin (username, pass, nama_admin, alamat, no_hp, email) values ('$username', '$password', '$nama', '$alamat', '$nohp', '$email')");
     echo "user add success. <a href='index.php'>view</a>";
+    header("Location: index.php");
     }
     ?>
 </body>

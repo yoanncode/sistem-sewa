@@ -28,6 +28,7 @@ $select = mysqli_query($konn, "select * from barang inner join jenis_barang on b
             <td>$data[jumlah]</td>
             <td>$data[satuan]</td>
             <td>$data[harga]</td>
+            <td>$data[adminId]</td>
             </tr>";
         }
         ?>

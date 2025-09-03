@@ -34,7 +34,9 @@ while ($data = mysqli_fetch_array($query)) {
         <td>$data[alamat]</td>
         <td>$data[no_hp]</td>
         <td>$data[email]</td>
-        <td><a href='edit_admin.php?id=$data[adminId]'>edit</a></td>
+        <td><a href='edit_admin.php?id=$data[adminId]'>edit</a>
+        <a href='delete_admin.php?id=$data[adminId]'>delete</a>
+        </td>
     <tr>";
 }
 ?>
