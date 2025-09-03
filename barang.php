@@ -15,6 +15,7 @@ $select = mysqli_query($konn, "select * from jenis_barang order by jenis_barang 
         <tr>
             <th>jenis barang</th>
             <th>keterangan</th>
+            <th>Aksi</th>
         </tr>
         <?php
         while ($data = mysqli_fetch_array($select)) {
