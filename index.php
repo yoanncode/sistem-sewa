@@ -1,5 +1,5 @@
 <?php
-
+include_once("cek_login.php");
 include_once("koneksi.php");
 
 $query = mysqli_query($konn, "select * from admin order by username asc");
@@ -40,7 +40,7 @@ while ($data = mysqli_fetch_array($query)) {
     <tr>";
 }
 ?>
-
 </table>
+<a href="logout.php">logout</a>
 </body>
 </html>
